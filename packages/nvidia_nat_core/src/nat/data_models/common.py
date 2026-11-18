@@ -228,6 +228,8 @@ def _serialize_secret(v: SecretStr | None, info: SerializationInfo) -> str | Non
     """
     Serialize a SecretStr to its plain value, or to its masked form when the dump is called with
     ``context={"mask_secrets": True}``.
+
+    Use the masking context for display output; runtime consumers can request plain values.
     """
     if v is None:
         return None
