@@ -26,6 +26,7 @@ export default defineConfig((ctx): CodeRabbitConfig => {
 
   return {
     language: "en-US",
+    tone_instructions: "Use a 3-6 word bold issue title. Follow with \"When X, Y fails\" and a direct fix, in plain English. Keep simple findings under 30 words. Include only evidence needed to act; omit praise, generic advice, repeated explanations, and code restatement.",
     inheritance: false,
     reviews: {
       profile,
@@ -33,6 +34,12 @@ export default defineConfig((ctx): CodeRabbitConfig => {
       review_details: true,
       collapse_walkthrough: false,
       poem: false,
+      high_level_summary_in_walkthrough: true,
+      pre_merge_checks: {
+        title: { mode: "off" },
+        description: { mode: "off" },
+        issue_assessment: { mode: "off" },
+      },
       sequence_diagrams: false,
       suggested_reviewers: false,
       auto_assign_reviewers: false,
