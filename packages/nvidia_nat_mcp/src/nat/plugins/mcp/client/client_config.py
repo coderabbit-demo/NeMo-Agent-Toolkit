@@ -38,6 +38,8 @@ class MCPServerConfig(BaseModel):
     Server connection details for MCP client.
     Supports stdio, sse, and streamable-http transports.
     streamable-http is the recommended default for HTTP-based connections.
+
+    Stdio requires a command instead of a URL. HTTP transports require a URL and reject stdio process options.
     """
     transport: Literal["stdio", "sse", "streamable-http"] = Field(
         default="streamable-http",
