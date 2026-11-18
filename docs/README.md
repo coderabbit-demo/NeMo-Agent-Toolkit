@@ -17,6 +17,8 @@
 
 # Building Documentation
 
+Run the commands below from the repository root.
+
 ## Prerequisites
 If you don't already have a uv environment setup, refer to the [Get Started](./source/get-started/installation.md) guide.
 
