@@ -7,6 +7,8 @@ paths:
 
 <!-- SPDX-License-Identifier: Apache-2.0 -->
 
+# Evaluator result contracts
+
 Keep failed evaluations distinguishable from successfully judged answers. Check
 that item-level errors survive aggregation and the CLI summary continues to show
 the error count next to the score. Preserve the current averaging policy unless

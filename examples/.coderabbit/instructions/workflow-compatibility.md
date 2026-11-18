@@ -9,6 +9,8 @@ paths:
 
 <!-- SPDX-License-Identifier: Apache-2.0 -->
 
+# Runnable example workflows
+
 For changed workflow configurations, verify referenced function, LLM, and other
 component names against the registered implementation and the example's declared
 dependencies. Do not invent a replacement `_type` when the registration cannot

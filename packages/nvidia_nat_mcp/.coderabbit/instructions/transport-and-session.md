@@ -7,6 +7,8 @@ paths:
 
 <!-- SPDX-License-Identifier: Apache-2.0 -->
 
+# MCP transport and session contracts
+
 Check transport-specific configuration against `MCPServerConfig.validate_model`.
 Stdio requires a command and rejects URL, auth provider, and custom headers.
 HTTP transports require a URL and reject stdio command, args, and env fields.
