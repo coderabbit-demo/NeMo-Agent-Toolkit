@@ -36,7 +36,10 @@ class EvalOutputItem(BaseModel):
 
 
 class EvalOutput(BaseModel):
-    """Container for evaluation output items."""
+    """Container for evaluation output items.
+
+    Item and error counts are derived properties, not serialized model fields.
+    """
 
     average_score: Any = Field(description="Average score across all evaluated items.")
     eval_output_items: list[SerializeAsAny[EvalOutputItem]] = Field(description="List of evaluation results.")
