@@ -7,6 +7,8 @@ paths:
 
 <!-- SPDX-License-Identifier: Apache-2.0 -->
 
+# Configuration contracts
+
 Review changes to the public configuration models for compatibility with existing
 workflow files. Flag renamed or removed fields, changed defaults, and altered
 `_type` discriminator serialization when existing consumers are not migrated.

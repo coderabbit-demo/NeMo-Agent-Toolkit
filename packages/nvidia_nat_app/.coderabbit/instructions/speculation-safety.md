@@ -7,6 +7,8 @@ paths:
 
 <!-- SPDX-License-Identifier: Apache-2.0 -->
 
+# Speculative execution safety
+
 Check that changes preserve the documented meaning of speculation-unsafe nodes:
 nodes that modify tool calls, wait for human approval, or transform/redact content
 that downstream nodes depend on must not be speculated unless explicitly

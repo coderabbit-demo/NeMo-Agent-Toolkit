@@ -7,6 +7,8 @@ paths:
 
 <!-- SPDX-License-Identifier: Apache-2.0 -->
 
+# Builder resource lifecycle
+
 Trace acquired resources through successful setup, partial setup failure,
 cancellation, and teardown. Flag changes that leave an entered async context,
 client, or logging configuration active after the workflow exits.
